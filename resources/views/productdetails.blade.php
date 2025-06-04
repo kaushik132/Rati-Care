@@ -83,8 +83,8 @@
                   <p>Elevate your wardrobe creations with our high-quality denim fabric featuring intricate embroidery work. Crafted for versatility and durability, this fabric is ideal for designing a wide range of garments — from stylish kurtis, trendy tops, and classic shirts to chic bottom wear. Whether you're creating casual everyday looks or statement pieces, this fabric blends comfort with craftsmanship to ensure stunning results every time.</p>
                   <h6>Product Details</h6>
                   <p><b>Width :</b> Approx. 270 grams per meter.</p>
-                  <p><b>Color:</b> Blue</p>
-                  <p><b>Material:</b> silk</p>
+                  <p><b>Color :</b> Blue</p>
+                  <p><b>Material :</b> silk</p>
                   <p><b>Quality :</b> Polyester </p>
                   <p><b>Wash care :</b> Hand wash or machine wash in cold water, avoid bleach, air dry, and iron on low if needed</p>
                 </div>
