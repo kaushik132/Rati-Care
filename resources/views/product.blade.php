@@ -4,7 +4,7 @@
    <section class="product-page-container">
     <div class="container">
            <div class="banner-area-titles">
-      <img src="./assets/images/banner-title-image.png" alt="icon" loading="lazy">
+      <img src="{{url('assets/images/banner-title-image.png')}}" alt="icon" loading="lazy">
       <h1>Weaving Tradition, Crafting Style</h1>
       <p> Discover the finest handcrafted textiles that blend heritage and modern elegance.</p>
     </div>

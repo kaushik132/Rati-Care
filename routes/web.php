@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::fallback(function () {
+    return response()->view('errors.404', [], 404);
+});
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/blogs',[HomeController::class, 'blog'])->name('blog');

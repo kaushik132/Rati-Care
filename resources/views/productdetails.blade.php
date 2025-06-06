@@ -5,7 +5,7 @@
 
    <!-- ===============================Product Details====================================== -->
     <section class="product-details-container-show">
-      <div class="product-details-bg-image"><img src="./assets/images/main-bg-image.png" alt="image"></div>
+      <div class="product-details-bg-image"><img src="{{url('assets/images/main-bg-image.png')}}" alt="image"></div>
       <div class="container-fluid">
         <div class="product-page-link-show">Home / New arrival > Pure Silk Saree</div>
         <div class="row">
@@ -32,7 +32,7 @@
                 </div>
               </div>
 
-              <div class="text-center"><img src="./assets/images/detail-image.png" alt="image" class="product-detail-below-slide-image"></div>
+              <div class="text-center"><img src="{{url('assets/images/detail-image.png')}}" alt="image" class="product-detail-below-slide-image"></div>
             </div>
           </div>
           <div class="col-md-5 mt-3">
@@ -55,15 +55,15 @@
 
               <div class="d-flex justify-content-between align-items-center flex-wrap mt-4">
                 <div class="d-flex align-items-center mt-2">
-                  <div><img src="./assets/images/value-1.png" alt="icon" class="value-icon-show"></div>
+                  <div><img src="{{url('assets/images/value-1.png')}}" alt="icon" class="value-icon-show"></div>
                   <div class="value-text">Exceptional Quality</div>
                 </div>
                 <div class="d-flex align-items-center mt-2">
-                  <div><img src="./assets/images/value-2.png" alt="icon" class="value-icon-show"></div>
+                  <div><img src="{{url('assets/images/value-2.png')}}" alt="icon" class="value-icon-show"></div>
                   <div class="value-text">Value for money</div>
                 </div>
                 <div class="d-flex align-items-center mt-2">
-                  <div><img src="./assets/images/value-3.png" alt="icon" class="value-icon-show"></div>
+                  <div><img src="{{url('assets/images/value-3.png')}}" alt="icon" class="value-icon-show"></div>
                   <div class="value-text">Trusted brand</div>
                 </div>
               </div>
