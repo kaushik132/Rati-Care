@@ -49,7 +49,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{ url('cart') }}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -75,7 +75,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -101,7 +101,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -127,7 +127,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -153,7 +153,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -180,7 +180,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>

@@ -1,5 +1,5 @@
 @extends('dashboard.layout.main')
-@section('main-containers')
+@section('main-containers') 
  <!-- ===================================Banner Area============================================ -->
   <section class="banner-section-bg">
     <div class="banner-area-titles">
@@ -15,10 +15,10 @@
               <div class="banner-slide-container">
                 <img src="https://plus.unsplash.com/premium_photo-1674747087104-516a4d6d316c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFicmljfGVufDB8fDB8fHww" alt="banner-image" loading="lazy">
                 <div class="icons-show">
-                  <a href="cart.html">
+                  <a href="{{url('cart')}}">
                     <div class="view-cart-icons"><i class="bi bi-cart4"></i></div>
                   </a>
-                  <a href="product-details.html">
+                  <a href="{{url('product')}}">
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
@@ -33,10 +33,10 @@
               <div class="banner-slide-container">
                 <img src="https://images.pexels.com/photos/4862928/pexels-photo-4862928.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4862928.jpg&fm=jpg" alt="banner-image" loading="lazy">
                 <div class="icons-show">
-                  <a href="cart.html">
+                  <a href="{{url('cart')}}">
                     <div class="view-cart-icons"><i class="bi bi-cart4"></i></div>
                   </a>
-                  <a href="product-details.html">
+                  <a href="{{url('product')}}">
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
@@ -51,10 +51,10 @@
               <div class="banner-slide-container">
                 <img src="https://images.pexels.com/photos/6331032/pexels-photo-6331032.jpeg?cs=srgb&dl=pexels-anete-lusina-6331032.jpg&fm=jpg" alt="banner-image" loading="lazy">
                 <div class="icons-show">
-                  <a href="cart.html">
+                  <a href="{{url('cart')}}">
                     <div class="view-cart-icons"><i class="bi bi-cart4"></i></div>
                   </a>
-                  <a href="product-details.html">
+                  <a href="{{url('product')}}">
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
@@ -69,10 +69,10 @@
               <div class="banner-slide-container">
                 <img src="https://images.unsplash.com/photo-1518019671582-55004f1bc9ab?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFicmljfGVufDB8fDB8fHww" alt="banner-image" loading="lazy">
                 <div class="icons-show">
-                  <a href="cart.html">
+                  <a href="{{url('cart')}}">
                     <div class="view-cart-icons"><i class="bi bi-cart4"></i></div>
                   </a>
-                  <a href="product-details.html">
+                  <a href="{{url('product')}}">
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
@@ -87,10 +87,10 @@
               <div class="banner-slide-container">
                 <img src="https://plus.unsplash.com/premium_photo-1674747087104-516a4d6d316c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFicmljfGVufDB8fDB8fHww" alt="banner-image" loading="lazy">
                 <div class="icons-show">
-                  <a href="cart.html">
+                  <a href="{{url('cart')}}">
                     <div class="view-cart-icons"><i class="bi bi-cart4"></i></div>
                   </a>
-                  <a href="product-details.html">
+                  <a href="{{url('product')}}">
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
@@ -493,7 +493,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -520,7 +520,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -547,7 +547,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -574,7 +574,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -601,7 +601,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -674,7 +674,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -701,7 +701,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -728,7 +728,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -755,7 +755,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -782,7 +782,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -847,7 +847,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -874,7 +874,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -901,7 +901,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -928,7 +928,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -955,7 +955,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>
@@ -982,7 +982,7 @@
                  <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
                  <a href="#"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
                 </div>
-                 <a href="cart.html">
+                 <a href="{{url('cart')}}">
                   <div class="product-title">
                   Add to Cart
                 </div></a>

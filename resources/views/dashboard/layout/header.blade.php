@@ -37,7 +37,7 @@
     <div class="nav-link-container">
       <i class="bi bi-x-circle close-menu"></i>
       <ul class="nav-links">
-        <li class="nav-link-item"><a href="/">Home</a></li>
+        <li class="nav-link-item"><a href="{{url('/')}}">Home</a></li>
 
         <!-- Desktop Mega Menu -->
         <li class="nav-link-item has-mega desktop-only">
@@ -164,6 +164,8 @@
             </div>
           </div>
         </li>
+
+         <li class="nav-link-item"><a href="{{url('contact')}}">Contact us</a></li>
 
         <!-- Mobile Accordion Mega Menu -->
         <li class="nav-link-item mobile-dropdown mobile-only">
