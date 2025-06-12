@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,9 +23,15 @@ Route::get('/blogs',[HomeController::class, 'blog'])->name('blog');
 Route::get('/products',[HomeController::class, 'product'])->name('product');
 Route::get('/product',[HomeController::class, 'productsDetails'])->name('productsDetails');
 Route::get('/cart',[HomeController::class, 'cart'])->name('cart');
-//Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
+
 
 Route::get('/contact', [HomeController::class, 'showContactForm'])->name('contact');
 Route::post('/contact', [HomeController::class, 'contact'])->name('contact.submit');
 
 
+Route::get('/index',[DashboardController::class, 'indexShow']);
+Route::get('/address',[DashboardController::class, 'addressShow']);
+Route::get('/add-address',[DashboardController::class, 'addAddressShow']);
+Route::get('/edit-address',[DashboardController::class, 'editAddressShow']);
+Route::get('/orders',[DashboardController::class, 'orderShow']);
+Route::get('/support',[DashboardController::class, 'supportShow']);
