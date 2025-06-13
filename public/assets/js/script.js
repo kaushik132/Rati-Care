@@ -223,6 +223,25 @@ const categorySwiper = new Swiper('.category-tab-slider', {
     1200: { slidesPerView: 3.5 },
   },
 });
+// ========================Testimonial Slider===============================
+
+const testimonialSwiper = new Swiper('.testimonial-slider', {
+  loop: true,
+  spaceBetween: 10,
+  grabCursor: true,
+  speed: 600,
+  autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+  breakpoints: {
+    0: { slidesPerView: 1.3, spaceBetween: 0 },
+    576: { slidesPerView: 1.4, spaceBetween: 0},
+    768: { slidesPerView: 1.5, spaceBetween: 10 },
+    992: { slidesPerView: 4 },
+    1400: { slidesPerView: 4 },
+  },
+});
 
 // ========================Special Offer Slider===============================
 
@@ -281,15 +300,35 @@ const offerSwiper = new Swiper('.special-offer-slider', {
   const thumbnails = document.querySelectorAll("#thumbnails img");
   const thumbnailContainer = document.getElementById("thumbnails");
 
+  // Function to set magnifier background after image is fully loaded
+  function setMagnifierBackground(url) {
+    const img = new Image();
+    img.src = url;
+    img.onload = () => {
+      magnifier.style.backgroundImage = `url('${url}')`;
+    };
+  }
+
+  // Set default image on page load
+  window.addEventListener("DOMContentLoaded", () => {
+    const initialZoom = mainImage.getAttribute("data-zoom") || mainImage.src;
+    setMagnifierBackground(initialZoom);
+  });
+
+  // Update main image and magnifier
   function updateMainImage(index) {
     thumbnails.forEach((thumb, i) => {
       thumb.classList.toggle("active", i === index);
     });
-    const src = thumbnails[index].dataset.full;
-    mainImage.src = src;
-    magnifier.style.backgroundImage = `url('${src}')`;
+
+    const fullSrc = thumbnails[index].dataset.full;
+    const zoomSrc = thumbnails[index].dataset.zoom || fullSrc;
+
+    mainImage.src = fullSrc;
+    setMagnifierBackground(zoomSrc);
   }
 
+  // Event listeners for thumbnails
   thumbnails.forEach((thumb, i) => {
     thumb.addEventListener("mouseover", () => {
       updateMainImage(i);
@@ -299,27 +338,35 @@ const offerSwiper = new Swiper('.special-offer-slider', {
     });
   });
 
-  // Magnifier
+  // Magnifier effect
   document.getElementById("mainImageContainer").addEventListener("mousemove", function (e) {
     const rect = mainImage.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
-    const xPercent = x / rect.width * 100;
-    const yPercent = y / rect.height * 100;
+    const xPercent = (x / rect.width) * 100;
+    const yPercent = (y / rect.height) * 100;
 
     magnifier.style.left = `${x - magnifier.offsetWidth / 2}px`;
     magnifier.style.top = `${y - magnifier.offsetHeight / 2}px`;
     magnifier.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
   });
 
-  // Manual scroll buttons
-  const scrollAmount = 120;
+  mainImage.addEventListener("mouseenter", () => {
+    magnifier.style.display = "block";
+  });
 
+  mainImage.addEventListener("mouseleave", () => {
+    magnifier.style.display = "none";
+  });
+
+  // Manual scroll for thumbnail carousel
+  const scrollAmount = 120;
   document.getElementById("prev").onclick = () => {
     thumbnailContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   };
-
   document.getElementById("next").onclick = () => {
     thumbnailContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
   };
+// ============================Cart Open===========================================
+

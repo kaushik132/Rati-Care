@@ -153,7 +153,7 @@ html {
   display: none;
   align-items: center;
   gap: 10px;
-  padding-right: 10px;
+  /* padding-right: 10px; */
 }
 
 .desktop-apply-btn {
@@ -242,7 +242,7 @@ html {
   .nav-container .open-menu {
     cursor: pointer;
     display: block;
-    padding-right: 15px;
+    /* padding-right: 15px; */
   }
 
   .nav-container .close-menu {
@@ -441,6 +441,7 @@ html {
   display: block;
 }
 
+
 /* ========================Banner============================= */
 .banner-section-bg {
   background-image: url("../images/banner-bg.png");
@@ -618,9 +619,9 @@ html {
 .sticky-contact-us-container {
   background-color: var(--first-color);
   color: #fff;
-  /* position:fixed;
+  position:fixed;
   right:0;
-  top:79%; */
+ bottom:55px;
   border-radius: 20px 0px 0px 20px;
   border: solid 1px var(--first-color);
   z-index: 10;
@@ -1198,4 +1199,125 @@ html {
     right: 5px;
     padding: 5px 8px;
   }
+}
+
+/* ===============================Offcanvas Cart===================================== */
+.offcanvas-header{
+  background-color: var(--first-color);
+  color:#fff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offcanvas-header i{
+  cursor: pointer;
+}
+.offcanvas-body{
+  padding:0;
+}
+.cart-items-container-box{
+  position: relative;
+  padding:5px;
+  height:700px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.cart-total-container-box-show{
+  position:absolute;
+  bottom:0;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  padding:15px 10px;
+  width:100%;
+  background-color: #fff;
+}
+.proceed-to-pay-cart-btn{
+  padding:10px 15px;
+  width:100%;
+  border:solid 1px var(--first-color);
+  background-color: var(--first-color);
+  font-size: 16px;
+  font-weight: 500;
+  color:#fff;
+}
+.main-cart-box-container{
+  background-color: #F9F9F9;
+  padding:10px;
+  border-radius: 10px;
+  display:flex;
+  align-items: center;
+}
+.cart-image--for-pay-show{
+  position:relative;
+}
+.cart-image--for-pay-show img{
+  width:100%;
+  max-width: 160px;
+  height:100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.offer-show-container-show{
+  background-color:#FFDFE3;
+  color:var(--first-color);
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  position: absolute;
+  right:5px;
+  top:5px;
+  padding:3px 5px
+}
+/* ===============================Testimonial=========================================== */
+.testimonial-container-box{
+  margin:5px;
+}
+.testimonial-container-box{
+    background-color: #fff;
+    padding:20px 30px;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-align: center;
+    /* border:solid 1px var(--first-color); */
+}
+.testimonial-container-box i{
+  color:var(--third-color);
+  font-size: 40px;
+}
+.testimonial-container-box p{
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.50px;
+}
+.testimonial-container-box .dotted-line{
+    width:100%;
+    max-width: 150px;
+    border:dotted 1px rgb(143, 143, 143);
+    margin:20px auto;
+}
+.testimonial-container-box .user-image{
+  width:100%;
+  max-width: 60px;
+  height:60px;
+  border-radius: 50%;
+  object-fit:cover;
+}
+.testimonial-container-box .user-name{
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 7px;
+}
+@media only screen and (max-width:992px){
+  .cart-items-container-box{
+  height:480px;
+}
+.testimonial-container-box{
+    padding:8px 5px;
+}
+.testimonial-container-box i{
+  color:var(--third-color);
+  font-size: 20px;
+}
+.testimonial-container-box p{
+  font-size: 13px;
+}
 }

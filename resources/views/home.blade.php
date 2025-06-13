@@ -1132,6 +1132,83 @@
         </div>
      </section>
 
+     <!-- ======================================Testimonial============================================================ -->
+    <section class="mb-3 timeless-elegance-container">
+          <div><img src="./assets/images/main-bg-image.png" alt="background" class="elegance-bg-image-show"></div>
+    <div class="container-fluid">
+      <h2>What Our Customer's Say</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, soluta.</p>
+
+      <div class="container-fluid">
+          <div class="swiper testimonial-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-container-box">
+              <i class="bi bi-quote"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate fuga fugit, voluptas corporis quaerat asperiores odio rerum pariatur et.</p>
+              
+              <div class="dotted-line"></div>
+             <div>
+              <div><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="user" class="user-image"></div>
+                <div class="user-name">Jhon Doe</div>
+             </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+             <div class="testimonial-container-box">
+              <i class="bi bi-quote"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate fuga fugit, voluptas corporis quaerat asperiores odio rerum pariatur et.</p>
+              
+              <div class="dotted-line"></div>
+             <div>
+              <div><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="user" class="user-image"></div>
+                <div class="user-name">Jhon Doe</div>
+             </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="testimonial-container-box">
+              <i class="bi bi-quote"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate fuga fugit, voluptas corporis quaerat asperiores odio rerum pariatur et.</p>
+              
+              <div class="dotted-line"></div>
+             <div>
+              <div><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="user" class="user-image"></div>
+                <div class="user-name">Jhon Doe</div>
+             </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+               <div class="testimonial-container-box">
+              <i class="bi bi-quote"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate fuga fugit, voluptas corporis quaerat asperiores odio rerum pariatur et.</p>
+              
+              <div class="dotted-line"></div>
+             <div>
+              <div><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="user" class="user-image"></div>
+                <div class="user-name">Jhon Doe</div>
+             </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+               <div class="testimonial-container-box">
+              <i class="bi bi-quote"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate fuga fugit, voluptas corporis quaerat asperiores odio rerum pariatur et.</p>
+              
+              <div class="dotted-line"></div>
+             <div>
+              <div><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="user" class="user-image"></div>
+                <div class="user-name">Jhon Doe</div>
+             </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+
 
 
 @endsection

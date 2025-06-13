@@ -24,6 +24,8 @@ Route::get('/products',[HomeController::class, 'product'])->name('product');
 Route::get('/product',[HomeController::class, 'productsDetails'])->name('productsDetails');
 Route::get('/cart',[HomeController::class, 'cart'])->name('cart');
 
+Route::get('/checkout-page',[HomeController::class, 'checkoutShow']);
+
 
 Route::get('/contact', [HomeController::class, 'showContactForm'])->name('contact');
 Route::post('/contact', [HomeController::class, 'contact'])->name('contact.submit');

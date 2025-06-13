@@ -29,9 +29,11 @@ class HomeController extends Controller
         return view('blog');
     }
 
-    //function contact(){
-      //  return view('contact');
-    //}
+    public function checkoutShow(){
+        return view('checkout-page');
+    }
+
+    
 
 
 
