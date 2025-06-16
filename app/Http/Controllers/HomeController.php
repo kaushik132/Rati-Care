@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Contact;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 786d5f9fbbf1ab12e5a1846ad175f66536c58e40
 use App\Models\Testimonial;
 use App\Models\Blog;
 use App\Models\BlogCategory;
