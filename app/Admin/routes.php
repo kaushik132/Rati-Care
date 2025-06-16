@@ -14,5 +14,6 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('home');
 
     $router->resource('contacts', ContactController::class);
+    $router->resource('blog-categories', BlogCategoryController::class);
 
 });

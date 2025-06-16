@@ -32,8 +32,7 @@ class ContactController extends AdminController
         $grid->column('email', __('Email'));
         $grid->column('phonenumber', __('Phonenumber'));
         $grid->column('message', __('Message'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
+
 
         return $grid;
     }
