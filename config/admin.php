@@ -418,6 +418,9 @@ return [
 
             // Editor configuration
             'config' => [
+                'language'      => 'en',
+        'height'        => 500,
+        'contentsCss'   => '/css/frontend-body-content.css',
 
             ]
         ]

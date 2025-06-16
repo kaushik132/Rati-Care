@@ -15,5 +15,6 @@ Route::group([
 
     $router->resource('contacts', ContactController::class);
     $router->resource('blog-categories', BlogCategoryController::class);
+    $router->resource('blogs', BlogController::class);
 
 });

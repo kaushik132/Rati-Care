@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Contact;
+use App\Models\Blog;
+use App\Models\BlogCategory;
 
 class HomeController extends Controller
 {
@@ -25,8 +27,26 @@ class HomeController extends Controller
   public  function cart(){
         return view('cart');
     }
-   public function blog(){
-        return view('blog');
+   public function blog($slug = null){
+     if($slug!=null){
+            $blogCategory = BlogCategory::where('slug',$slug)->first();
+            $blogList = Blog::latest()->with('blogCategory')->where('category_id',$blogCategory->id)->paginate(6);
+        //     $seo_data['seo_title'] =$blogCategory->seo_title;
+        //     $seo_data['seo_description'] =$blogCategory->seo_description;
+        //    $seo_data['keywords'] =$blogCategory->seo_keyword;
+        //    $canocial ='https://codepin.org/blogs/'.$slug;
+
+         
+
+        }else{
+            $blogList = Blog::latest()->with('blogCategory')->paginate(6);
+            // $seo_data['seo_title'] =$homepage->seo_title_blog;
+            // $seo_data['seo_description'] =$homepage->seo_des_blog;
+            // $seo_data['keywords'] =$homepage->seo_key_blog;
+            // $canocial ='https://codepin.org/blogs';
+         
+         }
+        return view('blog',compact('blogList'));
     }
 
     public function checkoutShow(){
