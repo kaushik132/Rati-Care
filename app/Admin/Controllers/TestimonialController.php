@@ -28,7 +28,7 @@ class TestimonialController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
-        $grid->column('image', __('Image'));
+        $grid->column('image')->image('/storage/', 100, 100);
         $grid->column('description', __('Description'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
@@ -66,7 +66,7 @@ class TestimonialController extends AdminController
         $form = new Form(new Testimonial());
 
         $form->text('name', __('Name'));
-        $form->textarea('image', __('Image'));
+        $form->image('image', __('Image'));
         $form->textarea('description', __('Description'));
 
         return $form;

@@ -1141,57 +1141,11 @@
 
       <div class="container-fluid">
           <div class="swiper testimonial-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="testimonial-container-box">
-              <i class="bi bi-quote"></i>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate fuga fugit, voluptas corporis quaerat asperiores odio rerum pariatur et.</p>
-              
-              <div class="dotted-line"></div>
-             <div>
-              <div><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="user" class="user-image"></div>
-                <div class="user-name">Jhon Doe</div>
-             </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-             <div class="testimonial-container-box">
-              <i class="bi bi-quote"></i>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate fuga fugit, voluptas corporis quaerat asperiores odio rerum pariatur et.</p>
-              
-              <div class="dotted-line"></div>
-             <div>
-              <div><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="user" class="user-image"></div>
-                <div class="user-name">Jhon Doe</div>
-             </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-              <div class="testimonial-container-box">
-              <i class="bi bi-quote"></i>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate fuga fugit, voluptas corporis quaerat asperiores odio rerum pariatur et.</p>
-              
-              <div class="dotted-line"></div>
-             <div>
-              <div><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="user" class="user-image"></div>
-                <div class="user-name">Jhon Doe</div>
-             </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-               <div class="testimonial-container-box">
-              <i class="bi bi-quote"></i>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate fuga fugit, voluptas corporis quaerat asperiores odio rerum pariatur et.</p>
-              
-              <div class="dotted-line"></div>
-             <div>
-              <div><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="user" class="user-image"></div>
-                <div class="user-name">Jhon Doe</div>
-             </div>
-            </div>
-          </div>
+          
         <div class="swiper-wrapper">
     @foreach($testimonials as $testimonial)
+    
+
         <div class="swiper-slide">
             <div class="testimonial-container-box">
                 <i class="bi bi-quote"></i>
@@ -1200,7 +1154,7 @@
                 <div class="dotted-line"></div>
                 <div>
                     <div>
-                        <img src="storage/" alt="user" class="user-image">
+                        <img src="{{url('uploads/'.$testimonial->image)}}" alt="user" class="user-image">
                     </div>
                     <div class="user-name">{{ $testimonial->name }}</div>
                 </div>
