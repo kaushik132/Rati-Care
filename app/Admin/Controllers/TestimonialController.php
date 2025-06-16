@@ -28,11 +28,7 @@ class TestimonialController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
-        $grid->column('image')->image('/storage/', 100, 100);
-        $grid->column('description', __('Description'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
-
+        $grid->column('image')->image('/uploads/', 100, 100);
         return $grid;
     }
 
