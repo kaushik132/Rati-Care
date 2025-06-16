@@ -7,12 +7,11 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Contact;
-<<<<<<< HEAD
+
 use App\Models\Testimonial;
-=======
 use App\Models\Blog;
 use App\Models\BlogCategory;
->>>>>>> 5233a09acbc6eb7f5cd2e355df143139f99fc1b9
+
 
 class HomeController extends Controller
 {

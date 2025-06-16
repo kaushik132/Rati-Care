@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2025 at 09:22 AM
+-- Generation Time: Jun 16, 2025 at 09:52 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -57,9 +57,10 @@ INSERT INTO `admin_menu` (`id`, `parent_id`, `order`, `title`, `icon`, `uri`, `p
 (11, 8, 10, 'Laravel artisan', 'icon-terminal', 'helpers/terminal/artisan', NULL, '2025-06-05 23:42:39', '2025-06-05 23:42:39'),
 (12, 8, 11, 'Routes', 'icon-list-alt', 'helpers/routes', NULL, '2025-06-05 23:42:39', '2025-06-05 23:42:39'),
 (14, 0, 11, 'Contacts', 'icon-file', 'contacts', NULL, '2025-06-12 01:29:02', '2025-06-12 01:29:02'),
-(15, 16, 11, 'Blog-categories', 'icon-file', 'blog-categories', NULL, '2025-06-15 23:52:41', '2025-06-15 23:59:04'),
-(16, 0, 0, 'Blogs', 'icon-address-book', NULL, '*', '2025-06-15 23:58:51', '2025-06-15 23:58:51'),
-(17, 16, 11, 'Blogs', 'icon-file', 'blogs', NULL, '2025-06-16 00:02:02', '2025-06-16 00:03:04');
+(15, 0, 0, 'Blogs', 'icon-address-book', NULL, '*', '2025-06-16 02:07:59', '2025-06-16 02:07:59'),
+(16, 15, 0, 'Blog Category', 'icon-angle-right', 'blog-categories', '*', '2025-06-16 02:08:39', '2025-06-16 02:08:39'),
+(17, 15, 0, 'Blogs', 'icon-angle-right', 'blogs', '*', '2025-06-16 02:09:03', '2025-06-16 02:09:03'),
+(18, 0, 0, 'Testimonial', 'icon-snowman', 'testimonials', '*', '2025-06-16 02:09:51', '2025-06-16 02:09:51');
 
 -- --------------------------------------------------------
 
@@ -247,115 +248,26 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (162, 1, 'admin/auth/menu/13', 'DELETE', '127.0.0.1', '{\"_method\":\"delete\",\"_token\":\"IeuwzMBWZdw3LMMujRo887pJ01SEKP8Qbim6QYz2\"}', '2025-06-12 01:34:20', '2025-06-12 01:34:20'),
 (163, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-12 01:34:21', '2025-06-12 01:34:21'),
 (164, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-12 01:34:23', '2025-06-12 01:34:23'),
-(165, 1, 'admin', 'GET', '127.0.0.1', '[]', '2025-06-15 23:28:22', '2025-06-15 23:28:22'),
-(166, 1, 'admin/contacts', 'GET', '127.0.0.1', '[]', '2025-06-15 23:28:23', '2025-06-15 23:28:23'),
-(167, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:30:30', '2025-06-15 23:30:30'),
-(168, 1, 'admin/helpers/routes', 'GET', '127.0.0.1', '[]', '2025-06-15 23:42:55', '2025-06-15 23:42:55'),
-(169, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:42:57', '2025-06-15 23:42:57'),
-(170, 1, 'admin/helpers/scaffold', 'POST', '127.0.0.1', '{\"table_name\":\"blog_category\",\"model_name\":\"App\\\\Models\\\\BlogCategory\",\"controller_name\":\"App\\\\Admin\\\\Controllers\\\\BlogCategoryController\",\"create\":[\"migration\",\"model\",\"controller\",\"migrate\",\"menu_item\"],\"fields\":[{\"name\":\"name\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"slug\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_title\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_description\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_keyword\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_image\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null}],\"timestamps\":\"on\",\"primary_key\":\"id\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-15 23:44:18', '2025-06-15 23:44:18'),
-(171, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:44:19', '2025-06-15 23:44:19'),
-(172, 1, 'admin/helpers/scaffold', 'POST', '127.0.0.1', '{\"table_name\":\"blog_category\",\"model_name\":\"App\\\\Models\\\\BlogCategory\",\"controller_name\":\"App\\\\Admin\\\\Controllers\\\\BlogCategoryController\",\"create\":[\"migration\",\"model\",\"controller\",\"migrate\",\"menu_item\"],\"fields\":[{\"name\":\"name\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"slug\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_title\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_description\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_keyword\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_image\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null}],\"timestamps\":\"on\",\"primary_key\":\"id\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-15 23:44:43', '2025-06-15 23:44:43'),
-(173, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:44:44', '2025-06-15 23:44:44'),
-(174, 1, 'admin/helpers/scaffold', 'POST', '127.0.0.1', '{\"table_name\":\"blog_category\",\"model_name\":\"App\\\\Models\\\\BlogCategory\",\"controller_name\":\"App\\\\Admin\\\\Controllers\\\\BlogCategoryController\",\"create\":[\"migration\",\"model\",\"controller\",\"migrate\",\"menu_item\"],\"fields\":[{\"name\":\"name\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"slug\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_title\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_description\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_keyword\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_image\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null}],\"timestamps\":\"on\",\"primary_key\":\"id\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-15 23:44:57', '2025-06-15 23:44:57'),
-(175, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:44:57', '2025-06-15 23:44:57'),
-(176, 1, 'admin/contacts', 'GET', '127.0.0.1', '[]', '2025-06-15 23:45:05', '2025-06-15 23:45:05'),
-(177, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:45:08', '2025-06-15 23:45:08'),
-(178, 1, 'admin/helpers/scaffold', 'POST', '127.0.0.1', '{\"table_name\":\"blog_category\",\"model_name\":\"App\\\\Models\\\\BlogCategory\",\"controller_name\":\"App\\\\Admin\\\\Controllers\\\\BlogCategoryController\",\"create\":[\"migration\",\"model\",\"controller\",\"migrate\",\"menu_item\"],\"fields\":[{\"name\":\"name\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"slug\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_title\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_description\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_keyword\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_image\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null}],\"timestamps\":\"on\",\"primary_key\":\"id\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-15 23:46:17', '2025-06-15 23:46:17'),
-(179, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:46:18', '2025-06-15 23:46:18'),
-(180, 1, 'admin', 'GET', '127.0.0.1', '[]', '2025-06-15 23:46:25', '2025-06-15 23:46:25'),
-(181, 1, 'admin/contacts', 'GET', '127.0.0.1', '[]', '2025-06-15 23:46:28', '2025-06-15 23:46:28'),
-(182, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:46:59', '2025-06-15 23:46:59'),
-(183, 1, 'admin/helpers/scaffold', 'POST', '127.0.0.1', '{\"table_name\":\"blog_category\",\"model_name\":\"App\\\\Models\\\\BlogCategory\",\"controller_name\":\"App\\\\Admin\\\\Controllers\\\\BlogCategoryController\",\"create\":[\"migration\",\"model\",\"controller\",\"migrate\",\"menu_item\"],\"fields\":[{\"name\":\"name\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null}],\"timestamps\":\"on\",\"primary_key\":\"id\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-15 23:47:23', '2025-06-15 23:47:23'),
-(184, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:47:23', '2025-06-15 23:47:23'),
-(185, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:48:27', '2025-06-15 23:48:27'),
-(186, 1, 'admin/contacts', 'GET', '127.0.0.1', '[]', '2025-06-15 23:48:34', '2025-06-15 23:48:34'),
-(187, 1, 'admin/contacts/create', 'GET', '127.0.0.1', '[]', '2025-06-15 23:48:37', '2025-06-15 23:48:37'),
-(188, 1, 'admin/contacts', 'GET', '127.0.0.1', '[]', '2025-06-15 23:48:40', '2025-06-15 23:48:40'),
-(189, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:48:44', '2025-06-15 23:48:44'),
-(190, 1, 'admin/helpers/scaffold', 'POST', '127.0.0.1', '{\"table_name\":\"blog_category\",\"model_name\":\"App\\\\Models\\\\BlogCategory\",\"controller_name\":\"App\\\\Admin\\\\Controllers\\\\BlogCategoryController\",\"create\":[\"migration\",\"model\",\"controller\",\"migrate\",\"menu_item\"],\"fields\":[{\"name\":\"name\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null}],\"timestamps\":\"on\",\"primary_key\":\"id\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-15 23:49:51', '2025-06-15 23:49:51'),
-(191, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:49:51', '2025-06-15 23:49:51'),
-(192, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:51:47', '2025-06-15 23:51:47'),
-(193, 1, 'admin/helpers/scaffold', 'POST', '127.0.0.1', '{\"table_name\":\"blog_category\",\"model_name\":\"App\\\\Models\\\\BlogCategory\",\"controller_name\":\"App\\\\Admin\\\\Controllers\\\\BlogCategoryController\",\"create\":[\"migration\",\"model\",\"controller\",\"migrate\",\"menu_item\"],\"fields\":[{\"name\":\"name\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"slug\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_title\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_description\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_keyword\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_image\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null}],\"timestamps\":\"on\",\"primary_key\":\"id\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-15 23:52:40', '2025-06-15 23:52:40'),
-(194, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:52:43', '2025-06-15 23:52:43'),
-(195, 1, 'admin/helpers/routes', 'GET', '127.0.0.1', '[]', '2025-06-15 23:53:00', '2025-06-15 23:53:00'),
-(196, 1, 'admin/helpers/routes', 'GET', '127.0.0.1', '[]', '2025-06-15 23:53:10', '2025-06-15 23:53:10'),
-(197, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-15 23:53:13', '2025-06-15 23:53:13'),
-(198, 1, 'admin/blog-categories/create', 'GET', '127.0.0.1', '[]', '2025-06-15 23:53:16', '2025-06-15 23:53:16'),
-(199, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-15 23:53:19', '2025-06-15 23:53:19'),
-(200, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-15 23:54:11', '2025-06-15 23:54:11'),
-(201, 1, 'admin/blog-categories/create', 'GET', '127.0.0.1', '[]', '2025-06-15 23:54:12', '2025-06-15 23:54:12'),
-(202, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-15 23:54:14', '2025-06-15 23:54:14'),
-(203, 1, 'admin/blog-categories/create', 'GET', '127.0.0.1', '[]', '2025-06-15 23:54:16', '2025-06-15 23:54:16'),
-(204, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-15 23:54:35', '2025-06-15 23:54:35'),
-(205, 1, 'admin/blog-categories/create', 'GET', '127.0.0.1', '[]', '2025-06-15 23:54:37', '2025-06-15 23:54:37'),
-(206, 1, 'admin/blog-categories/create', 'GET', '127.0.0.1', '[]', '2025-06-15 23:54:56', '2025-06-15 23:54:56'),
-(207, 1, 'admin/blog-categories/create', 'GET', '127.0.0.1', '[]', '2025-06-15 23:55:55', '2025-06-15 23:55:55'),
-(208, 1, 'admin/blog-categories', 'POST', '127.0.0.1', '{\"name\":\"Blog 1\",\"slug\":null,\"seo_title\":\"Impedit hic iure do\",\"seo_description\":\"Commodi fugiat temp\",\"seo_keyword\":\"Dolorem est totam et\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\",\"after-save\":\"view\"}', '2025-06-15 23:56:10', '2025-06-15 23:56:10'),
-(209, 1, 'admin/blog-categories/1', 'GET', '127.0.0.1', '[]', '2025-06-15 23:56:10', '2025-06-15 23:56:10'),
-(210, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-15 23:56:14', '2025-06-15 23:56:14'),
-(211, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-15 23:57:06', '2025-06-15 23:57:06'),
-(212, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-15 23:57:17', '2025-06-15 23:57:17'),
-(213, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-15 23:57:27', '2025-06-15 23:57:27'),
-(214, 1, 'admin/contacts', 'GET', '127.0.0.1', '[]', '2025-06-15 23:57:55', '2025-06-15 23:57:55'),
-(215, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:58:28', '2025-06-15 23:58:28'),
-(216, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-15 23:58:32', '2025-06-15 23:58:32'),
-(217, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"search_terms\":null,\"title\":\"Blogs\",\"icon\":\"icon-address-book\",\"uri\":null,\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-15 23:58:51', '2025-06-15 23:58:51'),
-(218, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-15 23:58:52', '2025-06-15 23:58:52'),
-(219, 1, 'admin/auth/menu/15/edit', 'GET', '127.0.0.1', '[]', '2025-06-15 23:58:57', '2025-06-15 23:58:57'),
-(220, 1, 'admin/auth/menu/15', 'PUT', '127.0.0.1', '{\"parent_id\":\"16\",\"search_terms\":null,\"title\":\"Blog-categories\",\"icon\":\"icon-file\",\"uri\":\"blog-categories\",\"roles\":[null],\"permission\":null,\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\",\"_method\":\"PUT\"}', '2025-06-15 23:59:04', '2025-06-15 23:59:04'),
-(221, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-15 23:59:05', '2025-06-15 23:59:05'),
-(222, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-15 23:59:07', '2025-06-15 23:59:07'),
-(223, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-15 23:59:18', '2025-06-15 23:59:18'),
-(224, 1, 'admin/helpers/scaffold', 'POST', '127.0.0.1', '{\"table_name\":\"blogs\",\"model_name\":\"App\\\\Models\\\\Blog\",\"controller_name\":\"App\\\\Admin\\\\Controllers\\\\BlogController\",\"create\":[\"migration\",\"model\",\"controller\",\"migrate\",\"menu_item\"],\"fields\":[{\"name\":\"category_id\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"title\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"slug\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"short_content\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"image\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"alt\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"url\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"description\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_title\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_description\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null},{\"name\":\"seo_keyword\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":null}],\"timestamps\":\"on\",\"primary_key\":\"id\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-16 00:02:02', '2025-06-16 00:02:02'),
-(225, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-16 00:02:02', '2025-06-16 00:02:02'),
-(226, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2025-06-16 00:02:54', '2025-06-16 00:02:54'),
-(227, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-16 00:02:58', '2025-06-16 00:02:58'),
-(228, 1, 'admin/auth/menu/17/edit', 'GET', '127.0.0.1', '[]', '2025-06-16 00:03:00', '2025-06-16 00:03:00'),
-(229, 1, 'admin/auth/menu/17', 'PUT', '127.0.0.1', '{\"parent_id\":\"16\",\"search_terms\":null,\"title\":\"Blogs\",\"icon\":\"icon-file\",\"uri\":\"blogs\",\"roles\":[null],\"permission\":null,\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\",\"_method\":\"PUT\"}', '2025-06-16 00:03:04', '2025-06-16 00:03:04'),
-(230, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-16 00:03:04', '2025-06-16 00:03:04'),
-(231, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-16 00:03:06', '2025-06-16 00:03:06'),
-(232, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:03:10', '2025-06-16 00:03:10'),
-(233, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-16 00:03:11', '2025-06-16 00:03:11'),
-(234, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:03:13', '2025-06-16 00:03:13'),
-(235, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:07:40', '2025-06-16 00:07:40'),
-(236, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:07:42', '2025-06-16 00:07:42'),
-(237, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:07:49', '2025-06-16 00:07:49'),
-(238, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:19', '2025-06-16 00:08:19'),
-(239, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:34', '2025-06-16 00:08:34'),
-(240, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:36', '2025-06-16 00:08:36'),
-(241, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:38', '2025-06-16 00:08:38'),
-(242, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:40', '2025-06-16 00:08:40'),
-(243, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:42', '2025-06-16 00:08:42'),
-(244, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:43', '2025-06-16 00:08:43'),
-(245, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:45', '2025-06-16 00:08:45'),
-(246, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:47', '2025-06-16 00:08:47'),
-(247, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:49', '2025-06-16 00:08:49'),
-(248, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:08:56', '2025-06-16 00:08:56'),
-(249, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:09:03', '2025-06-16 00:09:03'),
-(250, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:09:04', '2025-06-16 00:09:04'),
-(251, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:09:33', '2025-06-16 00:09:33'),
-(252, 1, 'admin/blogs', 'POST', '127.0.0.1', '{\"category_id\":\"1\",\"search_terms\":null,\"title\":\"Debitis qui deserunt\",\"slug\":null,\"short_content\":\"Eaque dolor voluptat\",\"alt\":\"Dignissimos anim qui\",\"url\":\"https:\\/\\/www.binajyj.tv\",\"description\":\"<p>asdasdsadsadsadsadsad<\\/p>\",\"seo_title\":\"Id ipsum exercitatio\",\"seo_description\":\"In voluptates labori\",\"seo_keyword\":\"Voluptate quas disti\",\"question\":\"Hic non vitae qui at\",\"answer\":\"Dicta laudantium co\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\",\"after-save\":\"view\"}', '2025-06-16 00:15:14', '2025-06-16 00:15:14'),
-(253, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:15:15', '2025-06-16 00:15:15'),
-(254, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:15:38', '2025-06-16 00:15:38'),
-(255, 1, 'admin/blogs', 'POST', '127.0.0.1', '{\"category_id\":\"1\",\"search_terms\":null,\"title\":\"Ea dignissimos magni\",\"slug\":null,\"short_content\":\"Molestias suscipit u\",\"alt\":\"Quibusdam mollit occ\",\"url\":\"https:\\/\\/www.qotuxo.me.uk\",\"description\":\"<p>asdasdsadsadsaddsad<\\/p>\",\"seo_title\":\"Nemo et ipsa ex deb\",\"seo_description\":\"Et aut ullam nisi ne\",\"seo_keyword\":\"Elit praesentium mi\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-16 00:15:58', '2025-06-16 00:15:58'),
-(256, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:15:59', '2025-06-16 00:15:59'),
-(257, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:16:48', '2025-06-16 00:16:48'),
-(258, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:16:50', '2025-06-16 00:16:50'),
-(259, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:16:56', '2025-06-16 00:16:56'),
-(260, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:16:58', '2025-06-16 00:16:58'),
-(261, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:28:27', '2025-06-16 00:28:27'),
-(262, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:28:36', '2025-06-16 00:28:36'),
-(263, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:28:46', '2025-06-16 00:28:46'),
-(264, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:29:01', '2025-06-16 00:29:01'),
-(265, 1, 'admin/blogs/create', 'GET', '127.0.0.1', '[]', '2025-06-16 00:29:25', '2025-06-16 00:29:25'),
-(266, 1, 'admin/blogs', 'POST', '127.0.0.1', '{\"category_id\":\"1\",\"search_terms\":null,\"title\":\"Sed adipisci ut qui\",\"slug\":null,\"short_content\":\"Error omnis eiusmod\",\"alt\":\"Illum quam sint rat\",\"url\":\"https:\\/\\/www.kyv.me\",\"description\":\"<p>sfdsfdsfdsfsdfsdf&nbsp; sdfafswadfsad s safsdf&nbsp;<\\/p>\",\"seo_title\":\"Rerum laboriosam ut\",\"seo_description\":\"Corporis voluptatem\",\"seo_keyword\":\"Ut cillum consectetu\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-16 00:29:45', '2025-06-16 00:29:45'),
-(267, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 00:29:46', '2025-06-16 00:29:46'),
-(268, 1, 'admin/blogs/1/edit', 'GET', '127.0.0.1', '[]', '2025-06-16 01:29:47', '2025-06-16 01:29:47'),
-(269, 1, 'admin/blogs/1', 'PUT', '127.0.0.1', '{\"category_id\":\"1\",\"search_terms\":null,\"title\":\"Ea dignissimos magni\",\"slug\":\"ea-dignissimos-magni\",\"short_content\":\"Molestias suscipit u\",\"alt\":\"Quibusdam mollit occ\",\"url\":\"https:\\/\\/www.qotuxo.me.uk\",\"description\":\"<p>asdasdsadsadsaddsad<\\/p>\",\"seo_title\":\"Nemo et ipsa ex deb\",\"seo_description\":\"Et aut ullam nisi ne\",\"seo_keyword\":\"Elit praesentium mi\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\",\"_method\":\"PUT\"}', '2025-06-16 01:29:53', '2025-06-16 01:29:53'),
-(270, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 01:29:53', '2025-06-16 01:29:53'),
-(271, 1, 'admin/blogs/2/edit', 'GET', '127.0.0.1', '[]', '2025-06-16 01:29:55', '2025-06-16 01:29:55'),
-(272, 1, 'admin/blogs/2', 'PUT', '127.0.0.1', '{\"category_id\":\"1\",\"search_terms\":null,\"title\":\"Sed adipisci ut qui\",\"slug\":\"sed-adipisci-ut-qui\",\"short_content\":\"Error omnis eiusmod\",\"alt\":\"Illum quam sint rat\",\"url\":\"https:\\/\\/www.kyv.me\",\"description\":\"<p>sfdsfdsfdsfsdfsdf&nbsp; sdfafswadfsad s safsdf&nbsp;<\\/p>\",\"seo_title\":\"Rerum laboriosam ut\",\"seo_description\":\"Corporis voluptatem\",\"seo_keyword\":\"Ut cillum consectetu\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\",\"_method\":\"PUT\"}', '2025-06-16 01:30:03', '2025-06-16 01:30:03'),
-(273, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 01:30:04', '2025-06-16 01:30:04');
+(165, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 02:06:14', '2025-06-16 02:06:14'),
+(166, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '[]', '2025-06-16 02:06:22', '2025-06-16 02:06:22'),
+(167, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '[]', '2025-06-16 02:06:57', '2025-06-16 02:06:57'),
+(168, 1, 'admin/auth/users', 'GET', '127.0.0.1', '[]', '2025-06-16 02:06:58', '2025-06-16 02:06:58'),
+(169, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '[]', '2025-06-16 02:07:00', '2025-06-16 02:07:00'),
+(170, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-16 02:07:37', '2025-06-16 02:07:37'),
+(171, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"search_terms\":null,\"title\":\"Blogs\",\"icon\":\"icon-address-book\",\"uri\":null,\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-16 02:07:59', '2025-06-16 02:07:59'),
+(172, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-16 02:08:00', '2025-06-16 02:08:00'),
+(173, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-16 02:08:02', '2025-06-16 02:08:02'),
+(174, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"15\",\"search_terms\":null,\"title\":\"Blog Category\",\"icon\":\"icon-angle-right\",\"uri\":\"blog-categories\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-16 02:08:39', '2025-06-16 02:08:39'),
+(175, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-16 02:08:39', '2025-06-16 02:08:39'),
+(176, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"15\",\"search_terms\":null,\"title\":\"Blogs\",\"icon\":\"icon-angle-right\",\"uri\":\"blogs\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-16 02:09:03', '2025-06-16 02:09:03'),
+(177, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-16 02:09:03', '2025-06-16 02:09:03'),
+(178, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"search_terms\":null,\"title\":\"Testimonial\",\"icon\":\"icon-snowman\",\"uri\":\"testimonials\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\"}', '2025-06-16 02:09:51', '2025-06-16 02:09:51'),
+(179, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-16 02:09:52', '2025-06-16 02:09:52'),
+(180, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2025-06-16 02:09:54', '2025-06-16 02:09:54'),
+(181, 1, 'admin/testimonials', 'GET', '127.0.0.1', '[]', '2025-06-16 02:09:59', '2025-06-16 02:09:59'),
+(182, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-16 02:10:01', '2025-06-16 02:10:01'),
+(183, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 02:10:02', '2025-06-16 02:10:02'),
+(184, 1, 'admin/contacts', 'GET', '127.0.0.1', '[]', '2025-06-16 02:10:06', '2025-06-16 02:10:06');
 
 -- --------------------------------------------------------
 
@@ -425,7 +337,10 @@ CREATE TABLE `admin_role_menu` (
 
 INSERT INTO `admin_role_menu` (`role_id`, `menu_id`, `created_at`, `updated_at`) VALUES
 (1, 2, NULL, NULL),
-(1, 16, NULL, NULL);
+(1, 15, NULL, NULL),
+(1, 16, NULL, NULL),
+(1, 17, NULL, NULL),
+(1, 18, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -577,6 +492,18 @@ CREATE TABLE `contacts` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `contacts`
+--
+
+INSERT INTO `contacts` (`id`, `firstname`, `lastname`, `email`, `phonenumber`, `message`, `created_at`, `updated_at`) VALUES
+(1, 'Karina', 'Andrews', 'hiku@mailinator.com', '+1 (767) 178-7564', 'Qui vel laboris do a', '2025-06-12 00:45:48', '2025-06-12 00:45:48'),
+(2, 'Hall', 'Nixon', 'gatab@mailinator.com', '+1 (985) 786-7183', 'Eum laboris in offic', '2025-06-12 00:46:33', '2025-06-12 00:46:33'),
+(3, 'Rafael', 'Rodriquez', 'gakym@mailinator.com', '+1 (996) 638-1897', 'Nulla voluptatem Se', '2025-06-12 00:48:59', '2025-06-12 00:48:59'),
+(4, 'Rina', 'Schmidt', 'xygix@mailinator.com', '+1 (444) 961-1714', 'Dolorum ex quo non v', '2025-06-12 00:53:40', '2025-06-12 00:53:40'),
+(5, 'Colt', 'Stokes', 'qipiwoqo@mailinator.com', '+1 (103) 567-2495', 'Ut libero cum volupt', '2025-06-12 00:58:55', '2025-06-12 00:58:55'),
+(6, 'karan', 'prajapat', 'karanprajapat9995@gmail.com', '8302734041', 'karan', '2025-06-12 01:32:05', '2025-06-12 01:32:05');
+
 -- --------------------------------------------------------
 
 --
@@ -614,10 +541,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (2, '2014_10_12_100000_create_password_reset_tokens_table', 1),
 (3, '2016_01_04_173148_create_admin_tables', 1),
 (4, '2019_08_19_000000_create_failed_jobs_table', 1),
-(5, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(6, '2025_06_11_120932_create_contacts_table', 2),
-(7, '2025_06_16_052240_create_blog_category_table', 2),
-(8, '2025_06_16_053202_create_blogs_table', 3);
+(5, '2019_12_14_000001_create_personal_access_tokens_table', 1);
 
 -- --------------------------------------------------------
 
@@ -649,6 +573,31 @@ CREATE TABLE `personal_access_tokens` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `testimonial`
+--
+
+CREATE TABLE `testimonial` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `testimonial`
+--
+
+INSERT INTO `testimonial` (`id`, `name`, `image`, `description`, `created_at`, `updated_at`) VALUES
+(7, 'ajay', 'images/A_happy_woman_student_with_arms_crossed___Premium_AI-generated_image-removebg-preview.png', 'ajay', '2025-06-16 02:15:38', '2025-06-16 02:15:38'),
+(8, 'shiv', 'images/Beef-Tacos.jpg', 'shiv', '2025-06-16 02:16:02', '2025-06-16 02:16:02'),
+(9, 'ravi', 'images/ced48f0ad8496b4d2b8e54802d07d4a3-removebg-preview.png', 'shiv', '2025-06-16 02:16:25', '2025-06-16 02:16:25'),
+(10, 'ravi', 'images/confident-young-businesswoman-standing-with-her-arm-crossed-against-gray-backdrop-removebg-preview.png', 'shiv', '2025-06-16 02:16:48', '2025-06-16 02:16:48');
 
 -- --------------------------------------------------------
 
@@ -778,6 +727,12 @@ ALTER TABLE `personal_access_tokens`
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
 
 --
+-- Indexes for table `testimonial`
+--
+ALTER TABLE `testimonial`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -792,13 +747,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admin_menu`
 --
 ALTER TABLE `admin_menu`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=274;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=185;
 
 --
 -- AUTO_INCREMENT for table `admin_permissions`
@@ -834,7 +789,7 @@ ALTER TABLE `blog_category`
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -846,13 +801,19 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `testimonial`
+--
+ALTER TABLE `testimonial`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `users`
