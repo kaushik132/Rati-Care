@@ -19,7 +19,7 @@ Route::fallback(function () {
 });
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
-Route::get('/blogs',[HomeController::class, 'blog'])->name('blog');
+Route::get('/blogs/{slug?}',[HomeController::class, 'blog'])->name('blog');
 Route::get('/products',[HomeController::class, 'product'])->name('product');
 Route::get('/product',[HomeController::class, 'productsDetails'])->name('productsDetails');
 Route::get('/cart',[HomeController::class, 'cart'])->name('cart');
