@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,6 +38,9 @@ Route::get('/add-address',[DashboardController::class, 'addAddressShow']);
 Route::get('/edit-address',[DashboardController::class, 'editAddressShow']);
 Route::get('/orders',[DashboardController::class, 'orderShow']);
 Route::get('/support',[DashboardController::class, 'supportShow']);
+
+
+Route::get('sitemap.xml',[SitemapController::class, 'index']);
 
 
 
