@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2025 at 09:52 AM
+-- Generation Time: Jun 16, 2025 at 02:43 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -267,7 +267,26 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (181, 1, 'admin/testimonials', 'GET', '127.0.0.1', '[]', '2025-06-16 02:09:59', '2025-06-16 02:09:59'),
 (182, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-16 02:10:01', '2025-06-16 02:10:01'),
 (183, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 02:10:02', '2025-06-16 02:10:02'),
-(184, 1, 'admin/contacts', 'GET', '127.0.0.1', '[]', '2025-06-16 02:10:06', '2025-06-16 02:10:06');
+(184, 1, 'admin/contacts', 'GET', '127.0.0.1', '[]', '2025-06-16 02:10:06', '2025-06-16 02:10:06'),
+(185, 1, 'admin/testimonials', 'GET', '127.0.0.1', '[]', '2025-06-16 04:07:37', '2025-06-16 04:07:37'),
+(186, 1, 'admin/testimonials', 'GET', '127.0.0.1', '[]', '2025-06-16 04:14:42', '2025-06-16 04:14:42'),
+(187, 1, 'admin/contacts', 'GET', '127.0.0.1', '[]', '2025-06-16 04:14:42', '2025-06-16 04:14:42'),
+(188, 1, 'admin/testimonials', 'GET', '127.0.0.1', '[]', '2025-06-16 06:04:08', '2025-06-16 06:04:08'),
+(189, 1, 'admin/testimonials', 'GET', '127.0.0.1', '[]', '2025-06-16 07:07:20', '2025-06-16 07:07:20'),
+(190, 1, 'admin/testimonials', 'GET', '127.0.0.1', '[]', '2025-06-16 07:07:36', '2025-06-16 07:07:36'),
+(191, 1, 'admin/testimonials', 'GET', '127.0.0.1', '[]', '2025-06-16 07:07:54', '2025-06-16 07:07:54'),
+(192, 1, 'admin', 'GET', '127.0.0.1', '[]', '2025-06-16 07:12:31', '2025-06-16 07:12:31'),
+(193, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-16 07:12:35', '2025-06-16 07:12:35'),
+(194, 1, 'admin/blog-categories/create', 'GET', '127.0.0.1', '[]', '2025-06-16 07:12:36', '2025-06-16 07:12:36'),
+(195, 1, 'admin/blog-categories', 'POST', '127.0.0.1', '{\"name\":\"B\",\"slug\":null,\"seo_title\":\"Cupiditate sapiente\",\"seo_description\":\"Sunt sapiente velit\",\"seo_keyword\":\"Qui et ea cillum dol\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\",\"after-save\":\"view\"}', '2025-06-16 07:12:48', '2025-06-16 07:12:48'),
+(196, 1, 'admin/blog-categories/2', 'GET', '127.0.0.1', '[]', '2025-06-16 07:12:49', '2025-06-16 07:12:49'),
+(197, 1, 'admin/blog-categories/2/edit', 'GET', '127.0.0.1', '[]', '2025-06-16 07:12:51', '2025-06-16 07:12:51'),
+(198, 1, 'admin/blog-categories/2', 'PUT', '127.0.0.1', '{\"name\":\"Blog 2\",\"slug\":\"b\",\"seo_title\":\"Cupiditate sapiente\",\"seo_description\":\"Sunt sapiente velit\",\"seo_keyword\":\"Qui et ea cillum dol\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\",\"_method\":\"PUT\"}', '2025-06-16 07:12:57', '2025-06-16 07:12:57'),
+(199, 1, 'admin/blog-categories', 'GET', '127.0.0.1', '[]', '2025-06-16 07:12:57', '2025-06-16 07:12:57'),
+(200, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 07:13:03', '2025-06-16 07:13:03'),
+(201, 1, 'admin/blogs/2/edit', 'GET', '127.0.0.1', '[]', '2025-06-16 07:13:05', '2025-06-16 07:13:05'),
+(202, 1, 'admin/blogs/2', 'PUT', '127.0.0.1', '{\"category_id\":\"2\",\"search_terms\":null,\"title\":\"Sed adipisci ut qui\",\"slug\":\"sed-adipisci-ut-qui\",\"short_content\":\"Error omnis eiusmod\",\"alt\":\"Illum quam sint rat\",\"url\":\"https:\\/\\/www.kyv.me\",\"description\":\"<p>sfdsfdsfdsfsdfsdf&nbsp; sdfafswadfsad s safsdf&nbsp;<\\/p>\",\"seo_title\":\"Rerum laboriosam ut\",\"seo_description\":\"Corporis voluptatem\",\"seo_keyword\":\"Ut cillum consectetu\",\"_token\":\"efHNjreOv3AcpZLWW3T64m3vSMmtfqaWbEFZ4vas\",\"_method\":\"PUT\"}', '2025-06-16 07:13:08', '2025-06-16 07:13:08'),
+(203, 1, 'admin/blogs', 'GET', '127.0.0.1', '[]', '2025-06-16 07:13:08', '2025-06-16 07:13:08');
 
 -- --------------------------------------------------------
 
@@ -448,7 +467,7 @@ CREATE TABLE `blogs` (
 
 INSERT INTO `blogs` (`id`, `category_id`, `title`, `slug`, `short_content`, `image`, `alt`, `url`, `description`, `seo_title`, `seo_description`, `seo_keyword`, `created_at`, `updated_at`) VALUES
 (1, '1', 'Ea dignissimos magni', 'ea-dignissimos-magni', 'Molestias suscipit u', 'images/Blog_Cover_Photo_Template_22_1200x750.jpg', 'Quibusdam mollit occ', 'https://www.qotuxo.me.uk', '<p>asdasdsadsadsaddsad</p>', 'Nemo et ipsa ex deb', 'Et aut ullam nisi ne', 'Elit praesentium mi', '2025-06-16 00:15:58', '2025-06-16 01:29:53'),
-(2, '1', 'Sed adipisci ut qui', 'sed-adipisci-ut-qui', 'Error omnis eiusmod', 'images/272-2-e1678785542142.jpeg', 'Illum quam sint rat', 'https://www.kyv.me', '<p>sfdsfdsfdsfsdfsdf&nbsp; sdfafswadfsad s safsdf&nbsp;</p>', 'Rerum laboriosam ut', 'Corporis voluptatem', 'Ut cillum consectetu', '2025-06-16 00:29:45', '2025-06-16 01:30:04');
+(2, '2', 'Sed adipisci ut qui', 'sed-adipisci-ut-qui', 'Error omnis eiusmod', 'images/272-2-e1678785542142.jpeg', 'Illum quam sint rat', 'https://www.kyv.me', '<p>sfdsfdsfdsfsdfsdf&nbsp; sdfafswadfsad s safsdf&nbsp;</p>', 'Rerum laboriosam ut', 'Corporis voluptatem', 'Ut cillum consectetu', '2025-06-16 00:29:45', '2025-06-16 07:13:08');
 
 -- --------------------------------------------------------
 
@@ -473,7 +492,8 @@ CREATE TABLE `blog_category` (
 --
 
 INSERT INTO `blog_category` (`id`, `name`, `slug`, `seo_title`, `seo_description`, `seo_keyword`, `seo_image`, `created_at`, `updated_at`) VALUES
-(1, 'Blog 1', 'blog-1', 'Impedit hic iure do', 'Commodi fugiat temp', 'Dolorem est totam et', 'images/Screenshot 2025-06-16 105011.png', '2025-06-15 23:56:10', '2025-06-15 23:56:10');
+(1, 'Blog 1', 'blog-1', 'Impedit hic iure do', 'Commodi fugiat temp', 'Dolorem est totam et', 'images/Screenshot 2025-06-16 105011.png', '2025-06-15 23:56:10', '2025-06-15 23:56:10'),
+(2, 'Blog 2', 'blog-2', 'Cupiditate sapiente', 'Sunt sapiente velit', 'Qui et ea cillum dol', NULL, '2025-06-16 07:12:49', '2025-06-16 07:12:57');
 
 -- --------------------------------------------------------
 
@@ -753,7 +773,7 @@ ALTER TABLE `admin_menu`
 -- AUTO_INCREMENT for table `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=185;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=204;
 
 --
 -- AUTO_INCREMENT for table `admin_permissions`
@@ -783,7 +803,7 @@ ALTER TABLE `blogs`
 -- AUTO_INCREMENT for table `blog_category`
 --
 ALTER TABLE `blog_category`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `contacts`
