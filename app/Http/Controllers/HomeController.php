@@ -7,12 +7,26 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Contact;
+use App\Models\Testimonial;
 
 class HomeController extends Controller
 {
   public  function index()
     {
-        return view('home');
+        $testimonials = Testimonial::all();
+        return view('home',compact('testimonials'));
+
+
+        if ($request->hasFile('image')) {
+    $image = $request->file('image')->store('testimonials', 'public');
+}
+
+Testimonial::create([
+    'name' => $request->name,
+    'description' => $request->description,
+    'image' => $image,
+]);
+
     }
 
    public function product(){
@@ -68,6 +82,10 @@ public function showContactForm()
 {
     return view('contact');
 }
+
+
+
+
 
     
 }

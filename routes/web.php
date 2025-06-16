@@ -37,3 +37,8 @@ Route::get('/add-address',[DashboardController::class, 'addAddressShow']);
 Route::get('/edit-address',[DashboardController::class, 'editAddressShow']);
 Route::get('/orders',[DashboardController::class, 'orderShow']);
 Route::get('/support',[DashboardController::class, 'supportShow']);
+
+
+
+
+

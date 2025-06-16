@@ -15,4 +15,6 @@ Route::group([
 
     $router->resource('contacts', ContactController::class);
 
+    $router->resource('testimonials', TestimonialController::class);
+
 });
