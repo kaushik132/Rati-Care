@@ -14,7 +14,7 @@
 
    <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">
@@ -354,6 +354,8 @@
    </div>
   </div>
 </div>
+
+
 
 
 
