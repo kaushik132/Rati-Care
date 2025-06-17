@@ -132,7 +132,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>
@@ -163,7 +163,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>
@@ -194,7 +194,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>
@@ -225,7 +225,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>
@@ -256,7 +256,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>
@@ -288,7 +288,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>

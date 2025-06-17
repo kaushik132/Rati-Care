@@ -172,8 +172,8 @@
                    <div>
                     <label for="" class="payement-method-label">Cards, UPI, NB, Wallets, BNPL by PayU India</label>
                      <div class="d-flex">
-                      <img src="./assets/images/payment-method1.png" alt="image" class="payment-method-image-show">
-                       <img src="./assets/images/payment-method2.png" alt="image" class="payment-method-image-show">
+                      <img src="{{url('assets/images/payment-method1.png')}}" alt="image" class="payment-method-image-show">
+                       <img src="{{url('assets/images/payment-method2.png')}}" alt="image" class="payment-method-image-show">
                      </div>
                   </div>
                 </div>
@@ -185,7 +185,7 @@
         <div class="col-md-5 mt-3">
           <div class="checkout-price-details-container">
             <div class="checkout-product-details">
-              <img src="./assets/images/fabrics-img.png" alt="image">
+              <img src="{{url('assets/images/fabrics-img.png')}}" alt="image">
               <div class="product-info">
                 <h5>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h5>
                 <p>Rs. 1750.00 <span>Rs. 1950.00 </span></p>
@@ -193,7 +193,7 @@
             </div>
 
             <div class="checkout-product-details">
-              <img src="./assets/images/fabrics-img.png" alt="image">
+              <img src="{{url('assets/images/fabrics-img.png')}}" alt="image">
               <div class="product-info">
                 <h5>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h5>
                 <p>Rs. 1750.00 <span>Rs. 1950.00 </span></p>

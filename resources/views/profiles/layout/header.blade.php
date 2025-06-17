@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-     <link rel="stylesheet" href="./dashboard-css/style.css">
-      <link rel="stylesheet" href="../assets/css/style.css">
+     <link rel="stylesheet" href="{{url('dashboard-css/style.css')}}">
+      <link rel="stylesheet" href="{{url('assets/css/style.css')}}">
     <title>Dashboard</title>
 </head>
 <body>
     <!-- ============================Header=================================== -->
  <header class="nav-container">
     <div class="nav-logo">
-      <a href="{{url('index')}}"><img src="./dashboard-images/header-logo.png" alt="logo" /></a>
+      <a href="{{url('index')}}"><img src="{{url('dashboard-images/header-logo.png')}}" alt="logo" /></a>
     </div>
 
     <!-- MOBILE: Menu + Icons -->
@@ -221,8 +221,8 @@
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="./dashboard-js/script.js"></script>
-    <script src="../assets/js/script.js"></script>
+   <script src="{{url('dashboard-js/script.js')}}"></script>
+    <script src="{{url('assets/js/script.js')}}"></script>
   
 </body>
 </html>

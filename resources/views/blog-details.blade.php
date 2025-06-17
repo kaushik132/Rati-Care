@@ -4,10 +4,10 @@
 
     <!--=================================Blog Details=========================================  -->
        <section class="product-page-container">
-          <div><img src="./assets/images/product-bg-img.png" alt="image" class="mainProduct-relative-image"></div>
+          <div><img src="{{url('assets/images/product-bg-img.png')}}" alt="image" class="mainProduct-relative-image"></div>
     <div class="container">
            <div class="banner-area-titles">
-      <img src="./assets/images/banner-title-image.png" alt="icon" loading="lazy">
+      <img src="{{url('assets/images/banner-title-image.png')}}" alt="icon" loading="lazy">
       <h1>Weaving Tradition, Crafting Style</h1>
       <p> Discover the finest handcrafted textiles that blend heritage and modern elegance.</p>
     </div>
@@ -44,7 +44,7 @@
     <section class="mt-4 mb-4">
       <div class="container-fluid">
                  <div class="banner-area-titles">
-      <img src="./assets/images/banner-title-image.png" alt="icon" loading="lazy">
+      <img src="{{url('assets/images/banner-title-image.png')}}" alt="icon" loading="lazy">
       <h1>Related Blogs</h1>
       <p> Discover the finest handcrafted textiles that blend heritage and modern elegance.</p>
     </div>

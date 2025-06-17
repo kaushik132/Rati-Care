@@ -41,9 +41,7 @@ Testimonial::create([
     }
 
 
-     public function blogDetails(){
-        return view('blogdetails');
-    }
+    
 
   public  function cart(){
         return view('cart');

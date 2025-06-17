@@ -25,11 +25,10 @@ Route::get('/cart-content', function () {
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/blogs/{slug?}',[HomeController::class, 'blog'])->name('blog');
-<<<<<<< HEAD
-Route::get('/blogdetails',[HomeController::class, 'blogDetails'])->name('blog.details');
-=======
+
+
 Route::get('/blog',[HomeController::class, 'blogDetails'])->name('blogDetails');
->>>>>>> 8a76a17cbea4e899bc16a574c55da61e07bd49e6
+
 Route::get('/products',[HomeController::class, 'product'])->name('product');
 Route::get('/product',[HomeController::class, 'productsDetails'])->name('productsDetails');
 Route::get('/cart',[HomeController::class, 'cart'])->name('cart');
