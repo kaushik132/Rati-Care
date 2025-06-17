@@ -64,6 +64,11 @@ Testimonial::create([
         return view('blog',compact('blogList'));
     }
 
+
+    public function blogDetails(){
+        return view('blog-details');
+    }
+
     public function checkoutShow(){
         return view('checkout-page');
     }

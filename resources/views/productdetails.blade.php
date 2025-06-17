@@ -50,7 +50,7 @@
               <small>15 meter in stock <span>35% OFF</span></small>
               <h5>Rs. 1750.00 <span class="discount-price">Rs. 1950.00</span> /meter</h5>
 
-              <button class="add-cart">Add to cart</button>
+              <button class="add-cart ">Add to cart</button>
               <button class="buy-now">Buy Now</button>
 
               <div class="d-flex justify-content-between align-items-center flex-wrap mt-4">

@@ -1,3 +1,8 @@
+          <!-- ===========================Offcanvas======================================== -->
+  <div id="offcanvasContainer"></div>
+
+
+  
   <!-- ==============================Footer================================================== -->
       <footer class="footer-background">
         <div class="container-fluid">
@@ -57,6 +62,27 @@
  <script src="{{url('assets/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{url('assets/js/swiper-bundle.min.js')}}"></script>
   <script src="{{url('assets/js/script.js')}}"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+  fetch('cart.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('offcanvasContainer').innerHTML = html;
+
+      const offcanvasElement = document.getElementById('dynamicOffcanvas');
+      // const offcanvasBody = document.getElementById('offcanvasContent');
+      const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+
+      // Attach listener to ALL trigger buttons on the page
+      document.querySelectorAll('.open-offcanvas').forEach(button => {
+        button.addEventListener('click', () => {
+          offcanvas.show();
+        });
+      });
+    });
+});
+</script>
 </body>
 
 </html>
