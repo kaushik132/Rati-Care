@@ -13,7 +13,7 @@
     <!-- ============================Header=================================== -->
  <header class="nav-container">
     <div class="nav-logo">
-      <a href="{{url('index')}}"><img src="./dashboard-images/header-logo.png" alt="logo" /></a>
+      <a href="{{url('profile')}}"><img src="./dashboard-images/header-logo.png" alt="logo" /></a>
     </div>
 
     <!-- MOBILE: Menu + Icons -->
@@ -195,7 +195,7 @@
       
       <!-- Sidebar for Desktop -->
       <div class="col-md-2 d-none d-md-block sidebar-desktop">
-        <a class="nav-link custom-sidebar-link active" href="{{url('index')}}">User Profile</a>
+        <a class="nav-link custom-sidebar-link active" href="{{url('profile')}}">User Profile</a>
         <a class="nav-link custom-sidebar-link" href="{{url('orders')}}">My Cart</a>
         <a class="nav-link custom-sidebar-link" href="{{url('address')}}">Your Address</a>
         <a class="nav-link custom-sidebar-link" href="{{url('support')}}">Help & Support</a>
@@ -212,10 +212,10 @@
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body">
-      <a class="nav-link custom-sidebar-link active" href="index.html">User Profile</a>
-      <a class="nav-link custom-sidebar-link" href="orders.html">My Cart</a>
-      <a class="nav-link custom-sidebar-link" href="address.html">Your Address</a>
-      <a class="nav-link custom-sidebar-link" href="support.html">Help & Support</a>
+      <a class="nav-link custom-sidebar-link active" href="{{url('profile')}}">User Profile</a>
+      <a class="nav-link custom-sidebar-link" href="{{url('orders')}}">My Cart</a>
+      <a class="nav-link custom-sidebar-link" href="{{url('address')}}">Your Address</a>
+      <a class="nav-link custom-sidebar-link" href="{{url('support')}}">Help & Support</a>
       <a class="nav-link custom-sidebar-link logout-show"><i class="bi bi-box-arrow-right"></i> Logout</a>
     </div>
   </div>

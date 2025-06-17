@@ -19,9 +19,11 @@ Route::fallback(function () {
     return response()->view('errors.404', [], 404);
 });
 
+// web.php
 Route::get('/cart-content', function () {
     return view('cart'); // resources/views/partials/cart.blade.php
 });
+
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/blogs/{slug?}',[HomeController::class, 'blog'])->name('blog');
@@ -37,7 +39,7 @@ Route::get('/contact', [HomeController::class, 'showContactForm'])->name('contac
 Route::post('/contact', [HomeController::class, 'contact'])->name('contact.submit');
 
 
-Route::get('/index',[DashboardController::class, 'indexShow']);
+Route::get('/profile',[DashboardController::class, 'profile']);
 Route::get('/address',[DashboardController::class, 'addressShow']);
 Route::get('/add-address',[DashboardController::class, 'addAddressShow']);
 Route::get('/edit-address',[DashboardController::class, 'editAddressShow']);

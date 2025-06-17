@@ -2,11 +2,6 @@
 @section('content') 
 
 
-
-
-
-
-      
       <!-- Content Area -->
       <div class="col-md-10 col-12 p-0">
        <div class="profile-info-container-box">

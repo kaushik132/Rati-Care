@@ -50,7 +50,7 @@
               <small>15 meter in stock <span>35% OFF</span></small>
               <h5>Rs. 1750.00 <span class="discount-price">Rs. 1950.00</span> /meter</h5>
 
-              <button class="add-cart ">Add to cart</button>
+              <button class="add-cart open-offcanvas">Add to cart</button>
               <button class="buy-now">Buy Now</button>
 
               <div class="d-flex justify-content-between align-items-center flex-wrap mt-4">
@@ -132,7 +132,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>
@@ -163,7 +163,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>
@@ -194,7 +194,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>
@@ -225,7 +225,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>
@@ -256,7 +256,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>
@@ -288,7 +288,7 @@
                     <div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div>
                   </a>
                 </div>
-                <a href="{{url('cart')}}">
+                <a class="open-offcanvas">
                   <div class="product-title">
                     Add to Cart
                   </div>

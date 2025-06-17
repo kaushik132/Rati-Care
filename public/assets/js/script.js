@@ -371,14 +371,15 @@ const offerSwiper = new Swiper('.special-offer-slider', {
 // ============================Cart Open===========================================
 
 fetch('/cart-content')
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById('offcanvasContainer').innerHTML = html;
-    const offcanvasElement = document.getElementById('dynamicOffcanvas');
-    const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
-    document.querySelectorAll('.open-offcanvas').forEach(button => {
-      button.addEventListener('click', () => {
-        offcanvas.show();
-      });
-    });
-  });
+  // .then(response => response.text())
+  // .then(html => {
+  //   document.getElementById('offcanvasContainer').innerHTML = html;
+  //   const offcanvasElement = document.getElementById('dynamicOffcanvas');
+  //   const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+  //   document.querySelectorAll('.open-offcanvas').forEach(button => {
+  //     button.addEventListener('click', () => {
+  //       offcanvas.show();
+  //     });
+  //   });
+  // });
+

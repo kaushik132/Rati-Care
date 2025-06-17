@@ -64,21 +64,29 @@
   <script src="{{url('assets/js/script.js')}}"></script>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-  fetch('cart.html')
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('/cart-content') // or 'cart.html'
     .then(response => response.text())
     .then(html => {
       document.getElementById('offcanvasContainer').innerHTML = html;
 
       const offcanvasElement = document.getElementById('dynamicOffcanvas');
-      // const offcanvasBody = document.getElementById('offcanvasContent');
-      const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
 
-      // Attach listener to ALL trigger buttons on the page
+      // Attach open buttons
       document.querySelectorAll('.open-offcanvas').forEach(button => {
         button.addEventListener('click', () => {
-          offcanvas.show();
+          const instance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+          instance.show();
         });
+      });
+
+      // Offcanvas closes itself with data attributes — no need to force remove backdrop manually
+      // Optional cleanup in case of bugs
+      offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
+        // Fix lingering backdrop if needed
+        document.querySelectorAll('.offcanvas-backdrop').forEach(el => el.remove());
+        document.body.classList.remove('offcanvas-backdrop');
+        document.body.style.overflow = '';
       });
     });
 });

@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-       public function indexShow(){
-        return view('index');
+       public function profile(){
+        return view('profile');
     }
 
        public function addressShow(){
