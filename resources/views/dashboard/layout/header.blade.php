@@ -25,8 +25,8 @@
 
     <!-- MOBILE: Menu + Icons -->
     <div class="mobile-icons">
-      <a href="#"><span class="nav-apply-btn"><i class="bi bi-telephone-fill"></i></span></a>
-      <a href="#"><span class="nav-apply-btn"><i class="bi bi-cart4"></i></span></a>
+      {{-- <a href="#"><span class="nav-apply-btn"><i class="bi bi-telephone-fill"></i></span></a> --}}
+      <a class="open-offcanvas"><span class="nav-apply-btn"><i class="bi bi-cart4"></i></span></a>
       <a href="#"><span class="nav-apply-btn"><i class="bi bi-person-fill"></i></span></a>
       <i class="bi bi-grid-fill open-menu"></i>
     </div>
@@ -187,11 +187,11 @@
 
     <!-- Desktop Right Icons -->
     <ul class="nav-links">
-      <li class="nav-link-item desktop-apply-btn">
+      {{-- <li class="nav-link-item desktop-apply-btn">
         <a href="#"><span class="nav-apply-btn"><i class="bi bi-telephone-fill"></i></span></a>
-      </li>
+      </li> --}}
       <li class="nav-link-item desktop-apply-btn">
-        <a href="#"><span class="nav-apply-btn"><i class="bi bi-cart4"></i></span></a>
+        <a class="open-offcanvas"><span class="nav-apply-btn"><i class="bi bi-cart4"></i></span></a>
       </li>
       <li class="nav-link-item desktop-apply-btn">
         <a href="#"><span class="nav-apply-btn"><i class="bi bi-person-fill"></i></span></a>
