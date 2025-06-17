@@ -11,8 +11,8 @@
   
   @foreach ($blogList as $blog)
       
-   
-                <div class="col-md-4 mt-4">
+  <div class="col-md-4 mt-4">
+                    <a href="{{url('blog/'.$blog->slug)}}" class="text-decoration-none">
               <div class="main-blogs-container">
                 <img src="{{url('uploads/'. $blog->image)}}" alt="Blog-image">
                <div class="share-post-show">
@@ -22,6 +22,7 @@
                
                 <h1>{{$blog->title}}</h1>
               </div>
+            </a>
           </div>
 
             @endforeach      
