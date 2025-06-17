@@ -27,7 +27,10 @@ Route::get('/cart-content', function () {
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/blogs/{slug?}',[HomeController::class, 'blog'])->name('blog');
+
+
 Route::get('/blog',[HomeController::class, 'blogDetails'])->name('blogDetails');
+
 Route::get('/products',[HomeController::class, 'product'])->name('product');
 Route::get('/product',[HomeController::class, 'productsDetails'])->name('productsDetails');
 Route::get('/cart',[HomeController::class, 'cart'])->name('cart');

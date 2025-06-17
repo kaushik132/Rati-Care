@@ -417,32 +417,32 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div>
-              <img src="./assets/images/offer-1.png" alt="offers" class="special-offer-banner-img" loading="lazy">
+              <img src="{{url('assets/images/offer-1.png')}}" alt="offers" class="special-offer-banner-img" loading="lazy">
              <div class="clipboard-icon-box" onclick="copyToClipboard()"><i class="bi bi-clipboard2-fill"></i></div>
              <div id="copyText" class="copy-text-clipboard">hello, there</div>
               <div id="copyPopup" class="copy-popup">copied!</div>
             </div>
           </div>
           <div class="swiper-slide">
-             <div><img src="./assets/images/offer-2.png" alt="offers" class="special-offer-banner-img" loading="lazy"></div>
+             <div><img src="{{url('assets/images/offer-2.png')}}" alt="offers" class="special-offer-banner-img" loading="lazy"></div>
         <div class="clipboard-icon-box" onclick="copyToClipboard()"><i class="bi bi-clipboard2-fill"></i></div>
              <div id="copyText" class="copy-text-clipboard">hello, there</div>
               <div id="copyPopup" class="copy-popup">copied!</div>
             </div>
           <div class="swiper-slide">
-          <div><img src="./assets/images/offer-3.png" alt="offers" class="special-offer-banner-img" loading="lazy"></div>
+          <div><img src="{{url('assets/images/offer-3.png')}}" alt="offers" class="special-offer-banner-img" loading="lazy"></div>
           <div class="clipboard-icon-box" onclick="copyToClipboard()"><i class="bi bi-clipboard2-fill"></i></div>
              <div id="copyText" class="copy-text-clipboard">hello, there</div>
               <div id="copyPopup" class="copy-popup">copied!</div>
         </div>
           <div class="swiper-slide">
-           <div><img src="./assets/images/offer-4.png" alt="offers" class="special-offer-banner-img" loading="lazy"></div>
+           <div><img src="{{url('assets/images/offer-4.png')}}" alt="offers" class="special-offer-banner-img" loading="lazy"></div>
          <div class="clipboard-icon-box" onclick="copyToClipboard()"><i class="bi bi-clipboard2-fill"></i></div>
              <div id="copyText" class="copy-text-clipboard">hello, there</div>
               <div id="copyPopup" class="copy-popup">copied!</div>
           </div>
           <div class="swiper-slide">
-            <div><img src="./assets/images/offer-2.png" alt="offers" class="special-offer-banner-img" loading="lazy"></div>
+            <div><img src="{{url('assets/images/offer-2.png')}}" alt="offers" class="special-offer-banner-img" loading="lazy"></div>
          <div class="clipboard-icon-box" onclick="copyToClipboard()"><i class="bi bi-clipboard2-fill"></i></div>
              <div id="copyText" class="copy-text-clipboard">hello, there</div>
               <div id="copyPopup" class="copy-popup">copied!</div>
@@ -811,7 +811,7 @@
 
    <!-- ====================================== Cultural Elegance======================================================== -->
   <section class="timeless-elegance-container">
-    <div><img src="./assets/images/main-bg-image.png" alt="background" class="elegance-bg-image-show"></div>
+    <div><img src="{{url('assets/images/main-bg-image.png')}}" alt="background" class="elegance-bg-image-show"></div>
     <div class="container-fluid">
       <h2>The Art of Cultural Elegance</h2>
       <p>Explore handcrafted pieces inspired by age-old traditions.</p>
@@ -1029,7 +1029,7 @@
    <!-- ====================================== Draped in Quality======================================================== -->
 
    <section class="draped-quality-container">
-    <div><img src="./assets/images/draped-quality-bg.png" alt="background" class="draped-quality-bg"></div>
+    <div><img src="{{url('assets/images/draped-quality-bg.png')}}" alt="background" class="draped-quality-bg"></div>
    <div class="container-fluid">
       <h2> Draped in Quality</h2>
       <p>Handpicked fabrics for every story you want to tell.</p>
@@ -1095,7 +1095,7 @@
          <h2>Exploring the World of Fabrics</h2>
          <div class="row">
           <div class="col-md-3 mt-3">
-             <div><img src="./assets/images/fabrics-img.png" alt="image" class="explore-fabric-box-img" loading="lazy"></div>
+             <div><img src="{{url('assets/images/fabrics-img.png')}}" alt="image" class="explore-fabric-box-img" loading="lazy"></div>
           </div>
           <div class="col-md-9 mt-3">
             <div class="explore-fabric-details">
@@ -1106,7 +1106,7 @@
 
 
           <div class="col-md-3 mt-3">
-             <div><img src="./assets/images/fabrics-img1.png" alt="image" class="explore-fabric-box-img" loading="lazy"></div>
+             <div><img src="{{url('assets/images/fabrics-img1.png')}}" alt="image" class="explore-fabric-box-img" loading="lazy"></div>
           </div>
           <div class="col-md-9 mt-3">
             <div class="explore-fabric-details">
@@ -1116,7 +1116,7 @@
           </div>
 
           <div class="col-md-3 mt-3">
-             <div><img src="./assets/images/fabrics-img-2.png" alt="image" class="explore-fabric-box-img" loading="lazy"></div>
+             <div><img src="{{url('assets/images/fabrics-img-2.png')}}" alt="image" class="explore-fabric-box-img" loading="lazy"></div>
           </div>
           <div class="col-md-9 mt-3">
             <div class="explore-fabric-details">
@@ -1134,7 +1134,7 @@
 
      <!-- ======================================Testimonial============================================================ -->
     <section class="mb-3 timeless-elegance-container">
-          <div><img src="./assets/images/main-bg-image.png" alt="background" class="elegance-bg-image-show"></div>
+          <div><img src="{{url('assets/images/main-bg-image.png')}}" alt="background" class="elegance-bg-image-show"></div>
     <div class="container-fluid">
       <h2>What Our Customer's Say</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, soluta.</p>

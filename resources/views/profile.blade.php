@@ -7,7 +7,7 @@
        <div class="profile-info-container-box">
            <div class="main-title-of-dashboard">Profile Information</div>
          
-           <div><img src="./dashboard-images/user-icon.png" alt="user" class="user-icon-show"></div>
+           <div><img src="{{url('dashboard-images/user-icon.png')}}" alt="user" class="user-icon-show"></div>
            <h6 class="mt-2">Sumit Sharma</h6>
            <div class="row">
           <div class="col-md-6">

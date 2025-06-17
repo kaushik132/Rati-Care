@@ -36,7 +36,7 @@
 
       <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">
@@ -59,7 +59,7 @@
 
       <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">
@@ -81,7 +81,7 @@
 
       <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">
@@ -103,7 +103,7 @@
 
       <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">
@@ -125,74 +125,7 @@
 
       <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
-      <div class="offer-show-container-show">35% OFF</div>
-    </div>
-      <div class="product-info">
-                <h6>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h6>
-                <p>Rs. 1750.00 <span>Rs. 1950.00 </span> /meter</p>
-
-                   <div class="d-flex align-items-center">
-                <div class="quantity-container">
-                  <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
-                  <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
-                  <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
-                </div>
-                <small class="ms-2">Quantity in meters</small>
-              </div>
-              </div>
-   </div>
-
-
-
-
-      <div class="main-cart-box-container mt-3">
-    <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
-      <div class="offer-show-container-show">35% OFF</div>
-    </div>
-      <div class="product-info">
-                <h6>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h6>
-                <p>Rs. 1750.00 <span>Rs. 1950.00 </span> /meter</p>
-
-                   <div class="d-flex align-items-center">
-                <div class="quantity-container">
-                  <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
-                  <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
-                  <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
-                </div>
-                <small class="ms-2">Quantity in meters</small>
-              </div>
-              </div>
-   </div>
-
-
-
-      <div class="main-cart-box-container mt-3">
-    <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
-      <div class="offer-show-container-show">35% OFF</div>
-    </div>
-      <div class="product-info">
-                <h6>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h6>
-                <p>Rs. 1750.00 <span>Rs. 1950.00 </span> /meter</p>
-
-                   <div class="d-flex align-items-center">
-                <div class="quantity-container">
-                  <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
-                  <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
-                  <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
-                </div>
-                <small class="ms-2">Quantity in meters</small>
-              </div>
-              </div>
-   </div>
-
-
-
-      <div class="main-cart-box-container mt-3">
-    <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">
@@ -215,7 +148,51 @@
 
       <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
+      <div class="offer-show-container-show">35% OFF</div>
+    </div>
+      <div class="product-info">
+                <h6>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h6>
+                <p>Rs. 1750.00 <span>Rs. 1950.00 </span> /meter</p>
+
+                   <div class="d-flex align-items-center">
+                <div class="quantity-container">
+                  <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                  <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+                  <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                </div>
+                <small class="ms-2">Quantity in meters</small>
+              </div>
+              </div>
+   </div>
+
+
+
+      <div class="main-cart-box-container mt-3">
+    <div class="cart-image--for-pay-show">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
+      <div class="offer-show-container-show">35% OFF</div>
+    </div>
+      <div class="product-info">
+                <h6>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h6>
+                <p>Rs. 1750.00 <span>Rs. 1950.00 </span> /meter</p>
+
+                   <div class="d-flex align-items-center">
+                <div class="quantity-container">
+                  <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                  <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+                  <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                </div>
+                <small class="ms-2">Quantity in meters</small>
+              </div>
+              </div>
+   </div>
+
+
+
+      <div class="main-cart-box-container mt-3">
+    <div class="cart-image--for-pay-show">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">
@@ -238,29 +215,7 @@
 
       <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
-      <div class="offer-show-container-show">35% OFF</div>
-    </div>
-      <div class="product-info">
-                <h6>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h6>
-                <p>Rs. 1750.00 <span>Rs. 1950.00 </span> /meter</p>
-
-                   <div class="d-flex align-items-center">
-                <div class="quantity-container">
-                  <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
-                  <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
-                  <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
-                </div>
-                <small class="ms-2">Quantity in meters</small>
-              </div>
-              </div>
-   </div>
-
-
-
-      <div class="main-cart-box-container mt-3">
-    <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">
@@ -283,7 +238,29 @@
 
       <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
+      <div class="offer-show-container-show">35% OFF</div>
+    </div>
+      <div class="product-info">
+                <h6>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h6>
+                <p>Rs. 1750.00 <span>Rs. 1950.00 </span> /meter</p>
+
+                   <div class="d-flex align-items-center">
+                <div class="quantity-container">
+                  <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                  <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+                  <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                </div>
+                <small class="ms-2">Quantity in meters</small>
+              </div>
+              </div>
+   </div>
+
+
+
+      <div class="main-cart-box-container mt-3">
+    <div class="cart-image--for-pay-show">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">
@@ -306,7 +283,30 @@
 
       <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
+      <div class="offer-show-container-show">35% OFF</div>
+    </div>
+      <div class="product-info">
+                <h6>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h6>
+                <p>Rs. 1750.00 <span>Rs. 1950.00 </span> /meter</p>
+
+                   <div class="d-flex align-items-center">
+                <div class="quantity-container">
+                  <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                  <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+                  <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                </div>
+                <small class="ms-2">Quantity in meters</small>
+              </div>
+              </div>
+   </div>
+
+
+
+
+      <div class="main-cart-box-container mt-3">
+    <div class="cart-image--for-pay-show">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">
@@ -327,7 +327,7 @@
 
       <div class="main-cart-box-container mt-3">
     <div class="cart-image--for-pay-show">
-    <img src="./assets/images/fabrics-img.png" alt="cart-image">
+    <img src="{{url('assets/images/fabrics-img.png')}}" alt="cart-image">
       <div class="offer-show-container-show">35% OFF</div>
     </div>
       <div class="product-info">

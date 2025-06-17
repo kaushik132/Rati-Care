@@ -39,6 +39,10 @@ Testimonial::create([
      public function productsDetails(){
         return view('productdetails');
     }
+
+
+    
+
   public  function cart(){
         return view('cart');
     }
