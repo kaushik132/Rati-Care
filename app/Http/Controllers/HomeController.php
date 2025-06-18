@@ -72,10 +72,7 @@ Testimonial::create([
     public function blogDetails($slug = null){
         $blog = Blog::latest()->limit(3)->get();
         $blogData = Blog::with('blogCategory')->where('slug',$slug)->first();
-    //     $seo_data['seo_title'] =$blogData->seo_title;
-    //     $seo_data['seo_description'] =$blogData->seo_description;
-    //    $seo_data['keywords'] =$blogData->seo_keyword;
-    //    $canocial ='https://codepin.org/blog-details/'.$slug;
+
         return view('blog-details',compact('blogData','blog'));
     }
 
