@@ -6,8 +6,8 @@
         display: block;
         float: none !important;
         margin: 20px auto; /* Adds space above and below the image */
-        max-width: 100%;
-        height: auto;
+        max-width : 100%;
+        height : auto;
     }
 </style>
 
@@ -19,7 +19,7 @@
            <div class="banner-area-titles">
       <img src="{{url('assets/images/banner-title-image.png')}}" alt="icon" loading="lazy">
       <h1>{{$blogData->title}}</h1>
-      <p> Discover the finest handcrafted textiles that blend heritage and modern elegance.</p>
+      <p>{{$blogData->short_content}}</p>
     </div>
  <div class="blog-content-details-show">
 <div class="row">
