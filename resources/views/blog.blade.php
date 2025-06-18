@@ -16,7 +16,7 @@
               <div class="main-blogs-container">
                 <img src="{{url('uploads/'. $blog->image)}}" alt="Blog-image">
                <div class="share-post-show">
-                 <div class="read-post-text">June 7 </div>
+                 <div class="read-post-text">{{ $blog->created_at->format('F j') }} </div>
                   {{-- <a href="#"><i class="fa-solid fa-share"></i></a> --}}
                </div>
                
