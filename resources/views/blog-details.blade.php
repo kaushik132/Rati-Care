@@ -1,6 +1,16 @@
 @extends('dashboard.layout.main')
 @section('main-containers')
 
+<style>
+    p img {
+        display: block;
+        float: none !important;
+        margin: 20px auto; /* Adds space above and below the image */
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
 
     <!--=================================Blog Details=========================================  -->
        <section class="product-page-container">
@@ -12,16 +22,12 @@
       <p> Discover the finest handcrafted textiles that blend heritage and modern elegance.</p>
     </div>
  <div class="blog-content-details-show">
-    <div class="row">
- 
-    
-        
-          <p>{!!$blogData->description!!}</p>
+<div class="row">
+    <div class="col-12">
+        <p>{!! $blogData->description !!}</p>
+    </div>
+</div>
 
-      
-
-      
-        </div>
     </div>
     </div>
     </div>
