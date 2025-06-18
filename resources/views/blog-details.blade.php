@@ -1,6 +1,16 @@
 @extends('dashboard.layout.main')
 @section('main-containers')
 
+<style>
+    p img {
+        display: block;
+        float: none !important;
+        margin: 20px auto; /* Adds space above and below the image */
+        max-width : 100%;
+        height : auto;
+    }
+</style>
+
 
 
     <!--=================================Blog Details=========================================  -->
@@ -12,6 +22,7 @@
       
 
       <h1>{{$blogData->title}}</h1>
+
       <p> Discover the finest handcrafted textiles that blend heritage and modern elegance.</p>
 
     </div>
@@ -21,10 +32,16 @@
         
           <p>{!! $blogData->description !!}</p>
 
-      
+      <p>{{$blogData->short_content}}</p>
+    </div>
+ <div class="blog-content-details-show">
+<div class="row">
+    <div class="col-12">
+        <p>{!! $blogData->description !!}</p>
+    </div>
+</div>
 
-      
-        </div>
+
     </div>
     </div>
     </div>

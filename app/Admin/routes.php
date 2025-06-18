@@ -18,5 +18,9 @@ Route::group([
     $router->resource('blogs', BlogController::class);
 
     $router->resource('testimonials', TestimonialController::class);
+    $router->resource('colors', ColorController::class);
+    $router->resource('ranges', RangeController::class);
+
+    $router->resource('product-categories', ProductCategoryController::class);
 
 });
